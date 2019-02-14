@@ -1,3 +1,89 @@
+@font-face {
+  font-family: 'OrangeBlossom';
+  src:url('fonts/OrangeBlossoms.ttf');
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  margin:0;
+  padding:0;
+}
 body{
-  background-color:green;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family:'OrangeBlossom';
+  background-color: grey;
+}
+
+.flex-container {
+	display: flex;
+  flex-wrap: wrap;
+  min-width: 316px;
+  min-height: 0;
+
+}
+
+#piechart{
+  width:200px;
+  height:100px;
+}
+
+#chart{
+  width:100px;
+  height:50px;
+}
+
+.flex-item {
+	padding: 10px;
+  margin: 10px auto;
+	flex-flow: column;
+  width:100%;
+  text-align: center;
+}
+.flex-item > img {
+  width: 50%;
+}
+.flex-item > p > b {
+	color:black;
+}
+/* Large screen*/
+@media only screen and (min-width:1500px) {
+  .flex-item{
+    flex-flow:row;
+    flex-basis:25%;
+  }
+  .flex-container{
+    max-width: 1600px;
+    margin:auto;/* XXX:  */
+  }
+
+
+}
+/* Laptop screen */
+@media only screen and (min-width: 1101px) and (max-width:1499px) {
+  .flex-item{
+    flex-flow:row;
+    width:30%;
+  }
+
+}
+/* Tablet*/
+@media only screen and (min-width: 768px) and (max-width:1100px){
+  .flex-container{
+    flex-flow:column;
+
+  }
+  .flex-item > img{
+    width:30%;
+    float:left;
+    margin-right:30px;
+
+  }
+  .flex-item{
+    text-align: left;
+  }
+
+
+
 }
