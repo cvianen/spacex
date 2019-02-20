@@ -40,6 +40,7 @@ body{
   .flex-item{
     flex-flow:row;
     width:25%;
+    max-width: 600px;
   }
   .flex-container{
     max-width: 1600px;

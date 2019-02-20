@@ -28,7 +28,7 @@
       ]);
 
        var areaChartData = google.visualization.arrayToDataTable([
-          ['Meters up in KM','troposfeer', 'stratosfeer','mesosfeer','thermosfeer','exosfeer'],
+          ['Meters up in KM','troposphere', 'stratosphere','mesosphere','thermosphere','exosphere'],
           ['80',200,175,150,100,0],
           ['120',150,175,150,120,30],
           ['160',50,220,200,175,100],
@@ -66,7 +66,7 @@
          legend: { position: 'top', alignment: 'start' },
          colors: ['#25282B', '#C6C5B9', '#69A8BB', '#E14D43', '#6B8F71'],
          hAxis: {title: 'Meters up in KM',  titleTextStyle: {color: '#333'}},
-         vAxis: {title: ' Amount of Sphere'}
+         vAxis: {title: ' Amount of Sphere  '}
        };
 
        var columnChartOptions = {
